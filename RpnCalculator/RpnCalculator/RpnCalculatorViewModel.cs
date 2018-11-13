@@ -112,7 +112,7 @@ namespace RpnCalculator
 
                     switch (op)
                     {
-                        case "divide": result = y / x; break;
+                        case "divide": result = x != 0 ? y / x : throw new DivideByZeroException(); break;
                         case "multiply": result = y * x; break;
                         case "subtract": result = y - x; break;
                         case "add": result = y + x; break;

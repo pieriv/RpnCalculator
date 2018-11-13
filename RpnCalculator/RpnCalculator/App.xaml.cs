@@ -1,7 +1,6 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
+﻿using Microsoft.AppCenter;
+using Microsoft.AppCenter.Analytics;
+using Microsoft.AppCenter.Crashes;
 
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
@@ -21,7 +20,7 @@ namespace RpnCalculator
 
         protected override void OnStart()
         {
-            // Handle when your app starts
+            AppCenter.Start("android=7717c1c1-ea1e-4319-9730-b8b5d8d16f4d;", typeof(Analytics), typeof(Crashes));
         }
 
         protected override void OnSleep()
