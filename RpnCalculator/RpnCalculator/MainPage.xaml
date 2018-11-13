@@ -261,7 +261,7 @@
                     Command="{Binding BinaryOperation}"
                     CommandParameter="add" />
             
-            <Button Text="ENTER" 
+            <Button Text="ENTER (2.0)" 
                     Grid.Row="9" Grid.Column="1" Grid.ColumnSpan="4"
                     Command="{Binding EnterCommand}" />
         </Grid>
